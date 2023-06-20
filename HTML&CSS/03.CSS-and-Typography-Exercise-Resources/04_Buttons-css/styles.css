@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(251, 251, 251);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    border: 1px solid black;
+    border-radius: 21px;
+    cursor: pointer;
+}
+
+div#normalBtn button{
+    padding: 6px 10px;
+}
+
+div.grey button,
+div.grey a {
+    outline: none;
+    background-color: rgb(51, 51, 51);
+    padding: 6px 10px;
+    color: white;
+}
+
+div.icon i {
+    padding-right: 4px;
+}
+
+div button.hover:hover {
+    background-color:rgb(0, 102, 0);
+}
+div#normalBtn button.hover:hover{
+    color: white
+}

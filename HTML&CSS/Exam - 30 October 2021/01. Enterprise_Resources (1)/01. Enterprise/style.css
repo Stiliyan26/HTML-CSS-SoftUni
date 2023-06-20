@@ -1,0 +1,57 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+#about {
+    width: 95%;
+    background-color: #f6f8f9;
+    margin: 100px auto;
+    max-width: 1000px;
+    padding: 48px;
+    position: relative;
+}
+
+#about .info {
+    width: 40%;
+}
+
+#about .info .info__subtitle {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+#about .info .title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+#about .info .desc {
+    color: #808a92;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+#about .info .btn {
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+}
+
+#about .info .contact-btn {
+    background-color: #786eff;
+    color: #faf9ff;
+}
+
+#about .info .learn-btn {
+    color: #273240;
+    border: 1px solid black;
+    margin-left: 10px;
+}
+
+#about .img {
+    position: absolute;
+    width: 25%;
+    bottom: 0px;
+    right: 40px;
+}

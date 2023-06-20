@@ -1,0 +1,302 @@
+/* cyrillic-ext */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0-ExdGM.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0aExdGM.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0yExdGM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptsans/v17/jizaRExUiTo99u79D0KExQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* cyrillic-ext */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptserif/v17/EJRVQgYoZZY2vCFuvAFbzr-tdg.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+/* cyrillic */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptserif/v17/EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2) format('woff2');
+    unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptserif/v17/EJRVQgYoZZY2vCFuvAFYzr-tdg.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/ptserif/v17/EJRVQgYoZZY2vCFuvAFWzr8.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+    --clr-header-red: #d01919;
+    --clr-footer-red: #d01919;
+    --clr-button-red: #d01919;
+    --clr-divider-red: #d01919;
+}
+
+body {
+    font-family: 'PT Sans', 'sans-serif';
+}
+
+/* Header */
+
+#header {
+    background-color: var(--clr-header-red);
+    height: 60px;
+}
+
+#header .info-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px;
+    align-items: center;
+    height: 100%;
+    padding-left: 0px;
+    color: #fdf9fb;
+}
+
+#header .info--item {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+}
+
+#header .info--item:nth-child(1){
+    margin-left: 50px;
+}
+
+#header .info--item:nth-child(3) {
+    margin-right: 50px;
+}
+
+#header .info--item i {
+    padding-top: 5px;
+}
+
+/* Hero section */
+
+#hero {
+    height: 600px;
+    background-image: url("./image/fitness-main.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+/* Nav */
+
+.nav .menu {
+    display: flex;
+    margin: unset;
+    padding-top: 1.7rem;
+    justify-content: flex-end;
+}
+
+.menu .page {
+    font-size: 1.1rem;
+    margin-right: 80px;
+}
+
+.menu .page a {
+    text-decoration: none;
+    color: #fffffd;
+}
+
+/* Info */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.info .info--title {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    margin-bottom: 2rem;
+}
+
+.info .info--desc {
+    font-size: 1.45rem;
+    color: #e5f4e4;
+    margin-bottom: 3rem;
+}
+
+.info .info--btn {
+    background-color: var(--clr-button-red);
+    color: #e5f4e4;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+}
+
+/* Welcome section */
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    align-items: center;
+}
+
+#welcome .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+#welcome .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1500px;
+    margin: 0 auto;
+    gap: 300px;
+    text-align: center;
+
+}
+
+#welcome .welcome--title {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+
+#welcome .welcome--divider {
+    height: 3px;
+    background-color: var(--clr-divider-red);
+    width: 45px;
+    margin-bottom: 30px;
+}
+
+#welcome .grid img {
+    width: 20%;
+    margin: 0 auto;
+}
+
+#welcome .grid .card--title {
+    color: #d01d1d;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Coaches */
+
+#coaches {
+    background-color: #efefef;
+    height: 600px;
+}
+
+#coaches .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 1600px;
+    margin: 0 auto;
+    gap: 300px;
+    text-align: center;
+}
+
+#coaches .heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+
+#coaches .coaches--title {
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+
+#coaches .coaches--divider {
+    height: 3px;
+    background-color: var(--clr-divider-red);
+    width: 45px;
+    margin-bottom: 30px;
+}
+
+#coaches img {
+    width: 85%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+#coaches .card--title {
+    padding-top: 10px;
+    padding-bottom: 6px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#coaches .card--subtitle {
+    font-size: 1.1rem;
+    color: #d01d1d;
+    padding-bottom: 10px;
+}
+
+#coaches .card--desc {
+    color: #afa5b2;
+}
+
+/* Footer */
+
+#footer {
+    background-color: var(--clr-footer-red);
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+}

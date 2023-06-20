@@ -1,0 +1,47 @@
+ul.item-list {
+    display: inline-block;
+    list-style: none;
+    position: relative;
+}
+
+li.item {
+    display: inline-block;
+    margin-right: 30px;
+    width: 100px;
+    height: 100px;
+}
+
+a {
+    display: inline-block;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(245, 244, 244);
+}
+
+i {
+    display: inline-block;
+    font-size: 50px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(81, 81, 81);
+    transition: color 300ms;
+}
+
+i.facebook:hover{
+    color: rgb(0, 0, 195);
+}
+
+i.twit:hover{
+    color: rgb(10, 131, 187);
+}
+
+i.youtube:hover{
+    color: rgb(210, 6, 6);
+}
+
+i.insta:hover{
+    color: rgb(172, 195, 0);
+}

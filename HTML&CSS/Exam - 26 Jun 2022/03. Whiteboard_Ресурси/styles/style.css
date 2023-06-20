@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=PT+Sans&display=swap');
+
+:root {
+    --clr-btn-green: #00d08e;
+    --clr-green-words: #55d8a0;
+    --clr-bg: #b2f1dd;
+}
+
+body {
+    font-family: 'PT Sans';
+    max-width: 1600px;
+    margin: 0 auto;
+
+}
+
+img {
+    width: 100%;
+}
+
+
+.section {
+    display: flex;
+}
+
+.left,
+.right {
+    flex-basis: 50%;
+}
+
+
+/* White-board section*/
+
+
+#white-board {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+        url("/image/computer-main.jpg");
+    background-size: 100% 700px;
+    min-height: 700px;
+    background-repeat: no-repeat;
+}
+
+#white-board .header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-shadow: 0 3px 3px black;
+    font-size: 1.75rem;
+}
+
+#white-board .header>* {
+    padding: 0px 11rem;
+}
+
+
+#white-board .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-shadow: 0 3px 3px black;
+}
+
+#white-board .info .info--title {
+    font-size: 4rem;
+    padding-top: 100px;
+    padding-bottom: 2rem;
+}
+
+#white-board .info .info--desc {
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+#white-board .info .info--btn {
+    background-color: var(--clr-btn-green);
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin-bottom: 4rem;
+}
+
+#white-board .info .see-action {
+    font-size: 1.7rem;
+}
+
+/* Hustle section */
+
+#hustle .info {
+    padding: 2rem 5rem;
+}
+
+#hustle .info--title {
+    font-size: 3rem;
+}
+
+#hustle .info--desc {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+#hustle .item--list {
+    padding-left: 0px;
+    line-height: 3rem;
+}
+
+#hustle .item--list>li {
+    font-size: 1.5rem;
+}
+
+#hustle .item--list>li>i {
+    color: #0cd08f;
+    margin-right: 1.5rem;
+}
+
+/* Hustle-case */
+
+#hustle-case .hustle--title {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+#hustle-case .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+}
+
+#hustle-case .card-second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+#hustle-case .card-second p {
+    color: var(--clr-green-words);
+    font-size: 2rem;
+}
+
+/* Questions section */
+
+#questions {
+    background-color: var(--clr-bg);
+}
+
+#questions h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+#questions .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    padding: 8%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+#questions .card {
+    text-align: center;
+}
+
+#questions .card h3 {
+    font-size: 1.75rem;
+}
+
+#questions .card {
+    font-size: 1.25rem;
+}
+
+#questions .footer {
+    text-align: center;
+    padding-bottom: 2wrem;
+}
+
+#questions .footer p {
+    font-size: 1.25rem;
+}

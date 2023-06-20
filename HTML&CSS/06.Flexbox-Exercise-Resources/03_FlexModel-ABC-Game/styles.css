@@ -1,0 +1,35 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 15vh;
+    max-height: 35rem;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+span {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.container :nth-child(1) {
+    order: 9;
+}
+
+.container :nth-child(2) {
+    order: 2;
+}
+
+.container :nth-child(3) {
+    order: 9;
+}
+
+.container :nth-child(4) {
+    order: 9;
+}

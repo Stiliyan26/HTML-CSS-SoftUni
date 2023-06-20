@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400&display=swap');
+
+:root {
+    --clr-bg-gray: #efefef;
+    --clr-btn-gray: #909090;
+}
+
+body {
+    font-family: "Raleway";
+}
+
+.container {
+    padding: 40px;
+}
+
+.section {
+    height: 70vh;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    background-color: var(--clr-bg-gray);
+}
+
+.info--desc {
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 4rem;
+}
+
+.info--title {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+}
+
+.accent {
+    font-weight: bold;
+}
+
+.vertial--divider {
+    width: 2px;
+    height: 7rem;
+    background-color: black;
+}
+
+/* First section */
+
+#first {
+    position: relative;
+}
+
+#first .nav {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.75rem;
+    padding: 3rem 4rem;
+}
+
+#first .nav i {
+    margin-left: 8px;
+}
+
+#first .info {
+    padding: 5rem 10rem;
+}
+
+#first img {
+    width: 40%;
+    position: absolute;
+    right: 7rem;
+    bottom: 0px;
+}
+
+/* Second section */
+#second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+#second .info {
+    width: 55%;
+}
+
+#second .info .info--heading {
+    font-size: 3.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+#second .info .horizontal--divider {
+    width: 7rem;
+    height: 2px;
+    background-color: black;
+}
+
+#second .info--title {
+    font-weight: 400;
+    margin-bottom: unset;
+}
+
+#second .info--title .accent {
+    font-weight: bold;
+}
+
+#second img {
+    width: 40%;
+    padding-left: 6rem;
+}
+
+#second .info--desc {
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+#second .social-media {
+    list-style-type: none;
+    font-size: 2rem;
+    display: flex;
+    gap: 2rem;
+    padding-left: 0;
+}
+
+#second .social-media .social-item {
+    text-decoration: none;
+}
+
+#second i {
+    color: #fff;
+    background-color: var(--clr-btn-gray);
+    padding: 1rem 1.5rem;
+}
+
+/* Third section */
+
+.poster img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fourth section*/
+
+#fourth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+}
+
+#fourth img {
+    width: 50%;
+}
+
+/* Fifth */
+
+#fifth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#fifth img {
+    width: 30%;
+    height: 40%;
+    object-fit: cover;
+}
+
+#fifth .scale {
+    transform: scale(1.5);
+}
+
+/* Sixth */
+
+#sixth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#sixth .info--title {
+    padding-top: 8rem;
+}
+
+#sixth .form {
+    display: grid;
+    width: 50%;
+    grid-template-areas:
+        "emailInp subjectInp"
+        "message message"
+        "sendBtn sendBtn";
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+
+#sixth form .base {
+    border: 1px solid black;
+    color: black;
+    background-color: transparent;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+#sixth input:nth-child(1) {
+    grid-area: emailInp;
+}
+
+#sixth input:nth-child(2) {
+    grid-area: subjectInp;
+}
+
+#sixth textarea {
+    grid-area: message;
+}
+
+#sixth button {
+    grid-area: sendBtn;
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: #111111;
+    color: white;
+}
+
+#sixth .footer {
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: 1rem;
+}

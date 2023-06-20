@@ -1,0 +1,42 @@
+/* TODO: Add the responsive styles here */
+@media screen and (max-width: 600px) {
+    .tm-header-inner {
+        margin: 0 auto;
+    }
+
+    .tm-nav {
+        margin-left: 130px;
+    }
+
+    .tm-header .tm-welcome-section {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+
+    .text-center {
+        width: 500px;
+        margin: 10px auto;
+    }
+    .tm-section-title {
+        width: 400px;
+    }
+    
+    .tm-gallery {
+        margin: 0px;
+        width: 100%;
+    } 
+    
+
+    .tm-gallery-page {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    article.row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}

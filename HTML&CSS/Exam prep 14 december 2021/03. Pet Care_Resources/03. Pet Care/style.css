@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open sans";
+    margin: 0px;
+}
+
+/* Header section*/
+#header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem 0px;
+}
+
+#header .nav-bar {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+
+}
+
+#header .nav-bar li>a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #4f6284;
+}
+
+/* We-care section */
+
+h1,
+h2 {
+    font-family: "Poppins";
+    margin: unset;
+}
+
+p {
+    font-family: "Open Sans";
+    font-size: 0.8rem;
+}
+
+#we-care {
+    background-image: url("./images/header-bg.png");
+    height: 550px;
+    background-size: 100% 550px;
+}
+
+#we-care .separator {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+#we-care .left {
+    padding-top: 90px;
+}
+
+#we-care .heading {
+    color: white;
+}
+
+#we-care .heading>* {
+    margin: unset;
+}
+
+#we-care .heading h1:first-child {
+    font-size: 3rem;
+    font-weight: lighter;
+    line-height: 2rem;
+}
+
+#we-care .heading h1:nth-child(2) {
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+#we-care p {
+    color: white;
+    margin: unset;
+    line-height: 1.5rem;
+}
+
+#we-care .we-care-btn {
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    color: red;
+    background-color: white;
+    padding: 0.75rem 2rem;
+}
+
+#we-care .img-dog {
+    height: 700px;
+}
+
+/* Services section */
+
+#services {
+    margin-top: 200px;
+}
+
+#services .heading {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#services .title {
+    font-size: 2.3rem;
+    margin: unset;
+    margin-bottom: 0.5rem;
+}
+
+#services .desc {
+    color: #afb0b1;
+    margin: unset;
+}
+
+#services .grid {
+    width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+#services .grid .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(240, 239, 239);
+}
+
+#services .card .images {
+    position: relative;
+    margin-top: 60px;
+}
+
+#services .card .images .bg {
+    width: 120px;
+}
+
+#services .card .images .hero {
+    width: 70px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+#services .info h3 {
+    text-align: center;
+}
+
+#services .info p {
+    text-align: center;
+    color: #afb0b1;
+    margin-bottom: 50px;
+}
+
+/* Cat section */
+
+#cat {
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#cat img {
+    width: 330px;
+}
+
+#cat .info {
+    padding-top: 70px;
+}
+
+#cat .heading {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+#cat .heading>h2 {
+    line-height: 3rem;
+}
+
+#cat .heading>h2:first-child {
+    font-weight: lighter;
+}
+
+#cat p {
+    color: #afb0b1;
+    margin-bottom: 2.5rem;
+}
+
+#cat button {
+    background: linear-gradient(to right, #f0452e, #ee580a);
+    color: white;
+    border: none;
+    padding: 1rem 2.5rem;
+    border-radius: 30px;
+}
+
+/* About-us */
+
+#about-us {
+    background-image: url("./images/cats-bg.png");
+    height: 450px;
+    background-size: 100% 450px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-us h1 {
+    color: white;
+    font-size: 2.5rem;
+}
+
+#about-us .desc {
+    color: #fff;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+#about-us .more-info {
+    display: flex;
+    gap: 20px;
+}
+
+#about-us button {
+    color: #ff4513;
+    border: none;
+    border-color: #fff;
+    padding: 0.75rem 2.5rem;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+#about-us .more {
+    color: #fff;
+    font-size: 0.75rem;
+}
+
+#about-us .more span {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+/* Contact us */
+
+#contact-us {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #f8f8f8;
+}
+
+#contact-us p {
+    color: #8a8888;
+}
+
+#contact-us img {
+    padding-top: 20px;
+    width: 100px;
+}
